@@ -4,6 +4,11 @@
 }
 
 @font-face {
+    font-family: 'FontGreycliffBold';
+    src: url("../polices/Greycliff/Fontspring-DEMO-greycliffcf-bold.otf");
+}
+
+@font-face {
     font-family: 'AppleGaramond';
     src: url("../polices/apple_garamond/AppleGaramond-Italic.ttf");
 }
@@ -87,6 +92,7 @@ footer {
     position: relative;
     padding-left: 25px;
     margin-bottom: 0.5em;
+    font-family: 'fontGreycliffBold';
   }
   
   .footer-section h3::before {
