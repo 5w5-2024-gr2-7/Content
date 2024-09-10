@@ -1,3 +1,14 @@
+@font-face {
+    font-family: 'FontGreycliff';
+    src: url("../polices/Greycliff/Fontspring-DEMO-greycliffcf-light.otf");
+}
+
+@font-face {
+    font-family: 'AppleGaramond';
+    src: url("../polices/apple_garamond/AppleGaramond-Italic.ttf");
+}
+
+
 /* Style général pour mobile */
 body {
     font-family: Arial, sans-serif;
@@ -36,11 +47,16 @@ footer {
     color: white;
     padding: 2em 1em;
     text-align: center;
+    font-family: 'FontGreycliff';
   }
   
   /* Partenaires */
   .partners h2 {
     margin-bottom: 1em;
+  }
+
+  .partners > h2{
+    font-family: 'AppleGaramond';
   }
   
   .partner-images {
@@ -170,4 +186,8 @@ footer {
     .container {
         padding: 1em 0.5em;
     }
+}
+
+footer > p {
+    font-family: Arial, Helvetica, sans-serif;
 }
