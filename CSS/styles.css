@@ -32,7 +32,7 @@ nav a {
 
 /* Footer général */
 footer {
-    background-color: #333;
+    background-color: #143139;
     color: white;
     padding: 2em 1em;
     text-align: center;
@@ -68,7 +68,19 @@ footer {
   }
   
   .footer-section h3 {
+    position: relative;
+    padding-left: 25px;
     margin-bottom: 0.5em;
+  }
+  
+  .footer-section h3::before {
+    content: '●';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.2em;
+    color: #ffd700;
   }
   
   .footer-section ul {
