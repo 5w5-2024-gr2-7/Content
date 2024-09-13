@@ -318,3 +318,9 @@ h2{
 p{
   color: white;
 }
+
+.arriere-plan-bleu {
+  background-color: #102229;
+  padding: 2em;
+  border-radius: 8px;
+}
