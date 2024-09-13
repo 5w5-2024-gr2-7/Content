@@ -132,7 +132,7 @@ footer {
   font-family: 'fontGreycliffBold';
 }
 
-.footer-section h3::before {
+.footer-section h3::before , .additional-info h3::before {
   content: '●';
   position: absolute;
   transform: translateX(-150%) translateY(-15%);
@@ -311,7 +311,7 @@ footer>p {
   }
 }
 
-h2{
+h2, h3{
   color: white;
 }
 
@@ -323,4 +323,5 @@ p{
   background-color: #102229;
   padding: 2em;
   border-radius: 8px;
+  margin: 40px;
 }
