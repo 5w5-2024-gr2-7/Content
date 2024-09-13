@@ -27,6 +27,8 @@ body {
         radial-gradient(circle at 90% 10%, rgba(135, 206, 235, 0.6), transparent 80%);
     background-blend-mode:color-dodge; */
     background-image: url("../images/fond.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 header {
@@ -238,4 +240,67 @@ footer {
 
 footer > p {
     font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style général pour le container de la section "À propos" */
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 2em;
+}
+
+/* Style pour l'image à gauche */
+.about-image {
+    flex: 1;
+    margin-right: 1em;
+}
+
+.about-image img {
+    width: 100%; 
+    max-width: auto;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Style pour le contenu à droite */
+.about-content {
+  flex: 2;
+}
+
+.about-content h2 {
+  font-family: 'AppleGaramond';
+  font-size: 2em;
+  margin-top: 0;
+}
+
+.additional-info {
+  margin-top: 1em;
+}
+
+.additional-info h3 {
+  font-family: 'FontGreycliffBold';
+  margin-bottom: 0.5em;
+}
+
+.additional-info p {
+  margin: 0.5em 0;
+}
+
+/* Style pour les petits écrans */
+@media screen and (max-width: 768px) {
+  .about-container {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .about-image {
+      margin-right: 0;
+      margin-bottom: 1em;
+  }
+
+  .about-content {
+      flex: none;
+  }
 }
