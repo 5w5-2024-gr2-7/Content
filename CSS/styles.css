@@ -25,16 +25,9 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  /* background: 
-        radial-gradient(circle at 20% 20%, rgba(106, 13, 173, 0.8), transparent 60%),
-        radial-gradient(circle at 80% 40%, rgba(135, 206, 235, 0.8), transparent 60%),
-        radial-gradient(circle at 50% 70%, rgba(0, 31, 63, 0.8), transparent 60%),
-        radial-gradient(circle at 10% 90%, rgba(106, 13, 173, 0.5), transparent 80%),
-        radial-gradient(circle at 90% 10%, rgba(135, 206, 235, 0.6), transparent 80%);
-    background-blend-mode:color-dodge; */
   background-image: url("../images/fond.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover;  
 }
 
 header {
@@ -661,7 +654,7 @@ img {
 /* For large devices */
 @media screen and (min-width: 1120px) {
   .container {
-    height: 100vh;
+    /* height: 100vh; */
   }
 
   .card__container {
