@@ -78,7 +78,7 @@ nav a:first-child {
 
 
 
-/* .container {
+/* .contenu {
   padding: 1em;
 } */
 
@@ -92,21 +92,21 @@ footer {
 }
 
 /* Partenaires */
-.partners h2 {
+.partenaires h2 {
   margin-bottom: 1em;
 }
 
-.partners>h2 {
+.partenaires > h2 {
   font-family: 'AppleGaramond';
 }
 
-.partner-images {
+.partenaires-images {
   display: flex;
   justify-content: space-around;
   margin-bottom: 2em;
 }
 
-.partner-images img {
+.partenaires-images img {
   width: 105px;
   height: auto;
   margin: 0 10px;
@@ -162,7 +162,7 @@ footer {
     margin-bottom: 0;
   }
 
-  .partner-images img {
+  .partenaires-images img {
     width: 80px;
   }
 
@@ -176,7 +176,7 @@ footer {
 }
 
 
-.folder-container {
+.folder-contenu {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -233,7 +233,7 @@ footer {
     font-size: .8em;
   }
 
-  /* .container {
+  /* .contenu {
     padding: 1em 0.5em;
   } */
 }
@@ -242,7 +242,7 @@ footer>p {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Style général pour le container de la section "À propos" */
+/* Style général pour le contenu de la section "À propos" */
 .contenu-about {
   display: flex;
   flex-wrap: wrap;
@@ -396,7 +396,7 @@ p{
   }
 }
 
-.card-container {
+.card-contenu {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
@@ -444,7 +444,7 @@ p{
 
 /* Media Queries */
 @media (min-width: 768px) {
-  .card-container {
+  .card-contenu {
     justify-content: space-around;
   }
 
@@ -454,7 +454,7 @@ p{
 }
 
 @media (min-width: 1024px) {
-  .card-container {
+  .card-contenu {
     justify-content: space-between;
   }
 
@@ -475,7 +475,7 @@ p{
   --title-color: hsl(0, 0%, 15%);
   --text-color: hsl(0, 0%, 35%);
   --body-color: hsl(0, 0%, 95%);
-  --container-color: hsl(0, 0%, 100%);
+  --contenu-color: hsl(0, 0%, 100%);
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
@@ -512,14 +512,14 @@ img {
 }
 
 /*=============== CARD ===============*/
-.container {
+.contenu {
   display: grid;
   place-items: center;
   margin-inline: 1.5rem;
   padding-block: 5rem;
 }
 
-.card__container {
+.card__contenu {
   display: grid;
   row-gap: 3.5rem;
 }
@@ -536,7 +536,7 @@ img {
 
 .card__data {
   width: 280px;
-  background-color: var(--container-color);
+  background-color: var(--contenu-color);
   padding: 1.5rem 2rem;
   box-shadow: 0 8px 24px hsla(0, 0%, 0%, .15);
   border-radius: 1rem;
@@ -633,7 +633,7 @@ img {
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
 @media screen and (max-width: 340px) {
-  .container {
+  .contenu {
     margin-inline: 1rem;
   }
 
@@ -645,7 +645,7 @@ img {
 
 /* For medium devices */
 @media screen and (min-width: 768px) {
-  .card__container {
+  .card__contenu {
     grid-template-columns: repeat(2, 1fr);
     column-gap: 1.5rem;
   }
@@ -653,7 +653,7 @@ img {
 
 /* For large devices */
 @media screen and (min-width: 1120px) {
-  .card__container {
+  .card__contenu {
     grid-template-columns: repeat(3, 1fr);
   }
   .card__img {
