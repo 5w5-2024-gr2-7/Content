@@ -823,3 +823,69 @@ h2 {
 .session4{
   background-color: green;
 }
+
+.galerie-projets {
+  padding: 20px;
+  text-align: center;
+}
+
+.galerie-projets h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.volet-dropdown {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.volet-dropdown span {
+  margin-right: 10px;
+  font-size: 1.2rem;
+}
+
+.volet-dropdown select {
+  padding: 5px;
+  font-size: 1rem;
+}
+
+.projets {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.galerie-projets > h1{
+  color: white;
+}
+
+.volet-dropdown > span{
+  color: white;
+}
+
+.projet {
+  flex: 0 1 calc(100% - 40px); /* Pour mobile */
+  max-width: 300px; /* Limite la largeur pour le mode desktop */
+  text-align: center;
+}
+
+.projet img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px; /* Arrondir les bords de l'image */
+}
+
+.projet p {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* Styles pour le mode desktop */
+@media (min-width: 768px) {
+  .projet {
+      flex: 0 1 calc(33.33% - 40px); /* Pour desktop, 3 projets par ligne */
+  }
+}
