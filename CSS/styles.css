@@ -713,6 +713,7 @@ img {
   }
 }
 
+/* Section des cours */
 
 .cours-section {
   padding: 20px;
@@ -809,4 +810,16 @@ h2 {
   .course-button {
       margin-left: auto;
   }
+}
+
+.session1{
+  background-color: yellow;
+}
+
+.session2{
+  background-color: red;
+}
+
+.session4{
+  background-color: green;
 }
