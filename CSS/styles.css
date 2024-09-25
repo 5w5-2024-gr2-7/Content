@@ -867,15 +867,15 @@ h2 {
 }
 
 .projet {
-  flex: 0 1 calc(100% - 40px); /* Pour mobile */
-  max-width: 300px; /* Limite la largeur pour le mode desktop */
+  flex: 0 1 calc(100% - 40px);
+  max-width: 300px;
   text-align: center;
 }
 
 .projet img {
   width: 100%;
   height: auto;
-  border-radius: 8px; /* Arrondir les bords de l'image */
+  border-radius: 8px;
 }
 
 .projet p {
@@ -886,6 +886,6 @@ h2 {
 /* Styles pour le mode desktop */
 @media (min-width: 768px) {
   .projet {
-      flex: 0 1 calc(33.33% - 40px); /* Pour desktop, 3 projets par ligne */
+      flex: 0 1 calc(33.33% - 40px);
   }
 }
