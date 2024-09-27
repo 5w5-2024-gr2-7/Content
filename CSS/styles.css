@@ -919,7 +919,7 @@ h2 {
 
 .project-subtitle {
   font-size: 16px;
-  color: #777;
+  color: white;
 }
 
 /* Galerie d'images */
@@ -1043,6 +1043,7 @@ h2 {
 .course-title {
   text-align: center;
   margin-top: 20px;
+  color: white;
 }
 
 .ovals {
@@ -1071,7 +1072,7 @@ h2 {
 }
 
 .software-box {
-  background-color: #ddd;
+  background-color: black;
   padding: 20px;
   margin-bottom: 10px;
   display: inline-block;
