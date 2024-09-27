@@ -19,3 +19,7 @@
 - Début du prototype en HTML / SASS
 - Déploiement de la page sur Github Pages
 - Avancée de la gestion du projet
+
+
+#### LIEN POUR ACCÉDER À NOTRE GITHUB-PAGE:
+- https://5w5-2024-gr2-7.github.io/Content/
