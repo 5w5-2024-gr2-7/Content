@@ -898,7 +898,6 @@ h2 {
 
 /* Bouton de retour */
 .back-button {
-  display: none; /* Caché en desktop */
   background-color: #333;
   color: #fff;
   border: none;
@@ -988,10 +987,6 @@ h2 {
       justify-content: space-between;
       align-items: flex-start;
       flex-direction: row; /* Alignement horizontal */
-  }
-
-  .back-button {
-      display: none;
   }
 
   .project-header {
