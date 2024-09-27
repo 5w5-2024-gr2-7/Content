@@ -890,6 +890,7 @@ h2 {
   }
 }
 
+/* Section d'un exemple de projet d'un seul étudiant */
 
 .container {
   padding: 20px;
@@ -982,10 +983,11 @@ h2 {
 
 /* Styles pour desktop */
 @media (min-width: 768px) {
-  .container {
+  .dereck {
       display: flex;
       justify-content: space-between;
       align-items: flex-start;
+      flex-direction: row; /* Alignement horizontal */
   }
 
   .back-button {
@@ -994,17 +996,19 @@ h2 {
 
   .project-header {
       text-align: left;
-      width: 40%;
+      width: 30%; /* Réduit la largeur pour laisser de l'espace pour la description */
   }
 
   .project-gallery {
       flex-direction: column;
-      width: 40%;
+      width: 30%; /* Largeur pour la galerie d'images */
+      margin-right: 20px; /* Ajouter un espace à droite de la galerie */
   }
 
   .project-description {
-      width: 40%;
+      width: 35%; /* Largeur pour la description */
       text-align: left;
+      order: 1; /* S'assurer que la description soit à droite */
   }
 
   .project-link {
