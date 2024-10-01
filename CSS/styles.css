@@ -1148,3 +1148,58 @@ h2 {
       margin: 20px auto;
   }
 }
+
+
+
+/* SECTION DES PROFS */
+
+h1 {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.professor-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Adds space between cards */
+  padding: 20px;
+}
+
+.professor-card {
+  background-color: #f9f9f9; /* Light background for cards */
+  border-radius: 10px; /* Rounded corners */
+  padding: 10px;
+  width: calc(100% / 3 - 40px); /* Three cards per row, adjusting for gap */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.professor-card img {
+  max-width: 100%; /* Responsive image */
+  border-radius: 5px; /* Rounded corners for images */
+}
+
+button {
+  background-color: #6d50e6; /* Example button color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #5c3fbe; /* Darker button color on hover */
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .professor-card {
+      width: calc(100% - 40px); /* Full width for mobile */
+  }
+}
+
+.professor-card > h2{
+  color: black;
+}
