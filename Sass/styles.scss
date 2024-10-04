@@ -21,6 +21,7 @@ Ce thème a été développé dans le cadre du cours 4W4
 @import "base/body";
 @import "base/polices";
 @import "base/root";
+@import "base/h";
 
 /* ///////////////////////////////////////////////////////////////// */
 /* Règles d'animations                                               */
@@ -32,17 +33,16 @@ Ce thème a été développé dans le cadre du cours 4W4
 /* Règles de components                                              */
 /* ///////////////////////////////////////////////////////////////// */
 
-@import "components/cours";
-@import "components/header";
-@import "components/footer";
-@import "components/enseignants";
-@import "components/propos";
-@import "components/jeu";
-@import "components/projet";
-@import "components/stages";
+@import "section/cours";
+@import "section/enseignants";
+@import "section/propos";
+@import "section/jeu";
+@import "section/projet";
+@import "section/stages";
 
 /* ///////////////////////////////////////////////////////////////// */
 /* Règles de layout                                                  */
 /* ///////////////////////////////////////////////////////////////// */
 
-@import "layout/h";
+@import "layout/header";
+@import "layout/footer";
