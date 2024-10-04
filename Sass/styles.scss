@@ -14,16 +14,35 @@ Text Domain: theme-gr2
 Ce thème a été développé dans le cadre du cours 4W4
 */
 
-@import "h.scss";
-@import "header.scss";
-@import "cours.scss";
-@import "footer.scss";
-@import "enseignants.scss";
-@import "animations.scss";
-@import "propos.scss";
-@import "body.scss";
-@import "polices.scss";
-@import "root.scss";
-@import "jeu.scss";
-@import "projet.scss";
-@import "stages.scss";
+/* ///////////////////////////////////////////////////////////////// */
+/* Règles de base                                                    */
+/* ///////////////////////////////////////////////////////////////// */
+
+@import "base/body";
+@import "base/polices";
+@import "base/root";
+
+/* ///////////////////////////////////////////////////////////////// */
+/* Règles d'animations                                               */
+/* ///////////////////////////////////////////////////////////////// */
+
+@import "animation/animations";
+
+/* ///////////////////////////////////////////////////////////////// */
+/* Règles de components                                              */
+/* ///////////////////////////////////////////////////////////////// */
+
+@import "components/cours";
+@import "components/header";
+@import "components/footer";
+@import "components/enseignants";
+@import "components/propos";
+@import "components/jeu";
+@import "components/projet";
+@import "components/stages";
+
+/* ///////////////////////////////////////////////////////////////// */
+/* Règles de layout                                                  */
+/* ///////////////////////////////////////////////////////////////// */
+
+@import "layout/h";
