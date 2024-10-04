@@ -39,15 +39,15 @@ html {
 
 @font-face {
   font-family: "FontGreycliff";
-  src: url("../polices/Greycliff/Fontspring-DEMO-greycliffcf-light.otf");
+  src: url("../../polices/Greycliff/Fontspring-DEMO-greycliffcf-light.otf");
 }
 @font-face {
   font-family: "FontGreycliffBold";
-  src: url("../polices/Greycliff/Fontspring-DEMO-greycliffcf-bold.otf");
+  src: url("../../polices/Greycliff/Fontspring-DEMO-greycliffcf-bold.otf");
 }
 @font-face {
   font-family: "AppleGaramond";
-  src: url("../polices/apple_garamond/AppleGaramond-Italic.ttf");
+  src: url("../../polices/apple_garamond/AppleGaramond-Italic.ttf");
 }
 .content {
   background-color: rgba(255, 255, 255, 0.8);
@@ -127,18 +127,9 @@ header {
   .folder-title {
     font-size: 0.9em;
   }
-}
-/* Responsivité pour petit écran (mobile) */
-@media screen and (max-width: 600px) {
   header h1 {
     font-size: 1.5em;
   }
-  nav a {
-    font-size: 0.8em;
-  }
-  /* .contenu {
-    padding: 1em 0.5em;
-  } */
 }
 /*=============== VARIABLES CSS ===============*/
 :root {
@@ -1037,7 +1028,7 @@ nav {
 nav a {
   color: white;
   text-decoration: none;
-  font-size: 1.2em;
+  font-size: 0.8em;
 }
 
 nav a:first-child {
@@ -1057,6 +1048,11 @@ nav a:first-child {
   text-align: center;
 }
 
+@media screen and (min-width: 768px) {
+  nav a {
+    font-size: 1.2em;
+  }
+}
 /* Footer général */
 footer {
   background-color: #143139;

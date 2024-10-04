@@ -1,16 +1,16 @@
 @font-face {
     font-family: 'FontGreycliff';
-    src: url("../polices/Greycliff/Fontspring-DEMO-greycliffcf-light.otf");
+    src: url("../../polices/Greycliff/Fontspring-DEMO-greycliffcf-light.otf");
 }
 
 @font-face {
     font-family: 'FontGreycliffBold';
-    src: url("../polices/Greycliff/Fontspring-DEMO-greycliffcf-bold.otf");
+    src: url("../../polices/Greycliff/Fontspring-DEMO-greycliffcf-bold.otf");
 }
 
 @font-face {
     font-family: 'AppleGaramond';
-    src: url("../polices/apple_garamond/AppleGaramond-Italic.ttf");
+    src: url("../../polices/apple_garamond/AppleGaramond-Italic.ttf");
 }
 
 .content {
@@ -95,19 +95,7 @@ header {
     .folder-title {
         font-size: 0.9em;
     }
-}
-
-/* Responsivité pour petit écran (mobile) */
-@media screen and (max-width: 600px) {
     header h1 {
         font-size: 1.5em;
     }
-
-    nav a {
-        font-size: .8em;
-    }
-
-    /* .contenu {
-      padding: 1em 0.5em;
-    } */
 }
