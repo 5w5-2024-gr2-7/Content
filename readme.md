@@ -20,6 +20,11 @@
 - Finalisation de la page HTML / SASS du site web
 
 
+#### L'objectif du Sprint 3
+
+### L’objectif principal du Sprint 3 est d'atteindre un niveau avancé d'intégration du design sur le site WordPress, en y ajoutant des fonctionnalités d'interactivité et des animations pour améliorer l'expérience utilisateur. Ce sprint met l’accent sur la création d'une interface dynamique et fluide. Elle doit être capable de s'adapter efficacement à différents formats d'écrans. L'une des tâches majeures est l'intégration continue du design du site, ce qui inclut la mise en place d'éléments visuels comme les images, les polices et les icônes. Ils doivent être correctement intégrés dans la base de données WordPress. Il est crucial que chaque élément graphique soit optimisé pour ne pas être déformé. L’alignement des contenus, les espaces entre les sections, ainsi que la disposition des éléments doivent être soignés pour garantir une navigation harmonieuse et intuitive. Ce sprint comporte également un volet technique important, avec la mise en oeuvre de fonctionnalités interactives et d'animations. L’interactivité ne se limite pas à des effets esthétiques, elle doit aussi rendre le site plus fonctionnel, en facilitant la navigation et l'accès aux informations. Un autre aspect clé de ce sprint est l’amélioration du comportement adaptatif du site, afin qu’il soit utilisable sur différentes tailles d’écrans. Cela signifie non seulement que le site doit être responsive, mais aussi qu'il doit offrir une expérience utilisateur optimisée sur chaque plateforme.
+
+
 ### VOICI UN LIEN VERS NOTRE SITE EN LIGNE
 
 ### LIEN POUR ACCÉDER NOTRE FICHIER BACKLOG GOOGLE SHEETS
