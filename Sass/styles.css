@@ -57,6 +57,15 @@ html {
   transform: translate(-50%, -50%);
 }
 
+@-webkit-keyframes slide {
+  0% {
+    transform: translateX(-25%);
+  }
+  100% {
+    transform: translateX(25%);
+  }
+}
+
 @keyframes slide {
   0% {
     transform: translateX(-25%);
@@ -189,7 +198,8 @@ p {
 /* Règles d'animations                                               */
 /* ///////////////////////////////////////////////////////////////// */
 .bg {
-  animation: slide 3s ease-in-out infinite alternate;
+  -webkit-animation: slide 3s ease-in-out infinite alternate;
+          animation: slide 3s ease-in-out infinite alternate;
   background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
   bottom: 0;
   left: -50%;
@@ -202,33 +212,47 @@ p {
 
 .bg2 {
   animation-direction: alternate-reverse;
-  animation-duration: 4s;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
 }
 
 .bg3 {
-  animation-duration: 5s;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
 }
 
 /* Naming animations in hover */
 .card__article:hover .card__data {
-  animation: show-data 1s forwards;
+  -webkit-animation: show-data 1s forwards;
+          animation: show-data 1s forwards;
   opacity: 1;
   transition: opacity 0.3s;
 }
 
 .card__article:hover {
-  animation: remove-overflow 2s forwards;
+  -webkit-animation: remove-overflow 2s forwards;
+          animation: remove-overflow 2s forwards;
 }
 
 .card__article:not(:hover) {
-  animation: show-overflow 2s forwards;
+  -webkit-animation: show-overflow 2s forwards;
+          animation: show-overflow 2s forwards;
 }
 
 .card__article:not(:hover) .card__data {
-  animation: remove-data 1s forwards;
+  -webkit-animation: remove-data 1s forwards;
+          animation: remove-data 1s forwards;
 }
 
 /* Card animation */
+@-webkit-keyframes show-data {
+  50% {
+    transform: translateY(-10rem);
+  }
+  100% {
+    transform: translateY(-7rem);
+  }
+}
 @keyframes show-data {
   50% {
     transform: translateY(-10rem);
@@ -237,9 +261,25 @@ p {
     transform: translateY(-7rem);
   }
 }
+@-webkit-keyframes remove-overflow {
+  to {
+    overflow: initial;
+  }
+}
 @keyframes remove-overflow {
   to {
     overflow: initial;
+  }
+}
+@-webkit-keyframes remove-data {
+  0% {
+    transform: translateY(-7rem);
+  }
+  50% {
+    transform: translateY(-10rem);
+  }
+  100% {
+    transform: translateY(0.5rem);
   }
 }
 @keyframes remove-data {
@@ -251,6 +291,15 @@ p {
   }
   100% {
     transform: translateY(0.5rem);
+  }
+}
+@-webkit-keyframes show-overflow {
+  0% {
+    overflow: initial;
+    pointer-events: none;
+  }
+  50% {
+    overflow: hidden;
   }
 }
 @keyframes show-overflow {
@@ -458,7 +507,8 @@ h2 {
   width: 100%;
   height: 100%;
   position: absolute;
-  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -587,7 +637,7 @@ button:hover {
   width: 280px;
   background-color: var(--contenu-color);
   padding: 1.5rem 2rem;
-  box-shadow: 0 8px 24px hsla(0, 0%, 0%, 0.15);
+  box-shadow: 0 8px 24px hsla(0deg, 0%, 0%, 0.15);
   border-radius: 1rem;
   position: absolute;
   bottom: -9rem;
@@ -637,7 +687,8 @@ button:hover {
 @media screen and (min-width: 768px) {
   .card__contenu {
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 1.5rem;
+    -moz-column-gap: 1.5rem;
+         column-gap: 1.5rem;
   }
 }
 /* For large devices */
@@ -804,7 +855,7 @@ button:hover {
     margin: 50px;
   }
   .course-title,
-  .ovals {
+.ovals {
     grid-column: span 2;
     text-align: center;
   }
@@ -1212,6 +1263,8 @@ button:hover {
   background-color: transparent;
   resize: none;
   border: 1px solid;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   margin-top: -2rem;
   position: absolute;
@@ -1273,35 +1326,6 @@ button:hover {
   fill: white;
 }
 
-@media screen and (min-width: 768px) {
-  .form-contact {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    gap: 2rem;
-  }
-  .inputBox {
-    width: 47%;
-  }
-  .inputBox.message {
-    width: 100%;
-  }
-  .inputBox-bouton {
-    position: relative;
-    margin-left: auto;
-    margin-right: 0;
-  }
-  .contact-information {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-  }
-  .conctact-telephone,
-  .conctact-adresse,
-  .conctact-reseaux {
-    width: 42%;
-  }
-}
 /* ///////////////////////////////////////////////////////////////// */
 /* Règles de layout                                                  */
 /* ///////////////////////////////////////////////////////////////// */

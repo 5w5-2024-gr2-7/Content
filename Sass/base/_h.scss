@@ -1,5 +1,16 @@
+@font-face {
+    font-family: 'AppleGaramond';
+    src: url("../../polices/apple_garamond/AppleGaramond-Italic.ttf");
+}
+
+@font-face {
+    font-family: 'AppleGaramond-Light';
+    src: url("../../polices/apple_garamond/AppleGaramond-Light.ttf");
+}
+
+
 h1 {
-    font-family: monospace;
+    font-family: AppleGaramond-Light;
 }
 
 h2,
