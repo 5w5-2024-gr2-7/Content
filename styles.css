@@ -1232,6 +1232,10 @@ button:hover {
   color: white;
 }
 
+.ligne {
+  display: none;
+}
+
 .contact-information {
   display: flex;
   flex-direction: column;
@@ -1295,11 +1299,33 @@ button:hover {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
   }
   .conctact-telephone,
   .conctact-adresse,
   .conctact-reseaux {
     width: 42%;
+  }
+}
+@media screen and (min-width: 1448px) {
+  .ligne {
+    display: block;
+    width: 2px;
+    height: 650px;
+    background-color: black;
+  }
+  .separation-contact {
+    flex-direction: row;
+  }
+  .contact-information {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .conctact-telephone,
+  .conctact-adresse,
+  .conctact-reseaux {
+    width: 100%;
   }
 }
 /* ///////////////////////////////////////////////////////////////// */
