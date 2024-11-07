@@ -1331,22 +1331,27 @@ button:hover {
 /* ///////////////////////////////////////////////////////////////// */
 /* Règles de layout                                                  */
 /* ///////////////////////////////////////////////////////////////// */
+body.no-scroll {
+  overflow: hidden;
+}
+
 .nav-bar {
   width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   list-style: none;
   position: relative;
   padding: 12px 20px;
 }
 
-body.no-scroll {
-  overflow: hidden; /* Disables scrolling when menu is open */
-}
-
-.logo img {
-  width: 40px;
+.menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  border: 1px solid black;
+  border-radius: 9rem;
+  width: 100%;
+  padding: 1rem;
+  padding-right: 2rem;
 }
 
 .logo-tim {
@@ -1364,18 +1369,6 @@ body.no-scroll {
   font-size: clamp(1.563rem, 1.349rem + 0.526vw, 2.188rem);
 }
 
-.menu {
-  display: flex;
-  border: 1px solid black;
-  width: 100%;
-  padding: 1rem;
-  border-radius: 9rem;
-  align-items: center;
-  justify-content: flex-end;
-  position: relative;
-  padding-right: 2rem;
-}
-
 .menu li {
   padding-left: 30px;
 }
@@ -1383,15 +1376,14 @@ body.no-scroll {
 .menu li a {
   display: inline-block;
   text-decoration: none;
-  color: black;
-  text-align: center;
+  margin-bottom: -7px;
   transition: 0.15s ease-in-out;
   position: relative;
+  color: black;
   font-family: "garamond-premier-pro-subhead", serif;
   font-weight: 400;
   font-style: normal;
   font-size: clamp(1rem, 0.743rem + 0.632vw, 1.75rem);
-  margin-bottom: -7px;
 }
 
 .menu li a::after {
@@ -1442,12 +1434,18 @@ body.no-scroll {
     height: 100vh;
     position: fixed;
     top: 0;
-    right: -100%;
     z-index: 100;
     background-color: white;
     transition: all 0.2s ease-in-out;
     border-radius: 0;
     border: 0px;
+  }
+  .logo-tim {
+    padding-left: 0.5rem;
+    position: static;
+  }
+  .logo-tim a {
+    font-size: clamp(3.438rem, 2.057rem + 8.242vw, 4.375rem);
   }
   .menu li {
     margin-top: 40px;
@@ -1458,18 +1456,12 @@ body.no-scroll {
     margin-left: 0;
     font-size: clamp(2.5rem, 1.58rem + 5.495vw, 3.125rem);
   }
-  .ouvre-menu, .ferme-menu {
+  .ouvre-menu,
+  .ferme-menu {
     display: block;
   }
   #check:checked ~ .menu {
     right: 0;
-  }
-  .logo-tim a {
-    font-size: clamp(3.438rem, 2.057rem + 8.242vw, 4.375rem);
-  }
-  .logo-tim {
-    padding-left: 0.5rem;
-    position: static;
   }
 }
 /* Composition de base */

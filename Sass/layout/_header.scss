@@ -1,20 +1,32 @@
+// CSS POUR LE MENU EN DESKTOP ET MOVILE/ MENU BURGER
 
+
+// Pour empecher de scroller quand le menu bg est ouvert
+body.no-scroll {
+  overflow: hidden; 
+}
+
+//  la bar de menu 
 .nav-bar {
   width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   list-style: none;
   position: relative;
   padding: 12px 20px;
 }
 
-body.no-scroll {
-  overflow: hidden; /* Disables scrolling when menu is open */
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    border: 1px solid black;
+    border-radius: 9rem;
+    width: 100%;
+    padding: 1rem;
+    padding-right: 2rem;
 }
 
-.logo img {width: 40px;}
-
+// Le texte TIM(Logo)
 .logo-tim{
   position: absolute;
   left: 1rem;
@@ -23,41 +35,33 @@ body.no-scroll {
 
 .logo-tim a{
   font-family: "termina", sans-serif;
-font-weight: 900;
-font-style: normal;
-text-decoration: none;
-color: black;
-font-size: clamp(1.563rem, 1.349rem + 0.526vw, 2.188rem);
-
+  font-weight: 900;
+  font-style: normal;
+  text-decoration: none;
+  color: black;
+  font-size: clamp(1.563rem, 1.349rem + 0.526vw, 2.188rem);
 }
 
-.menu {
-  display: flex;
-    border: 1px solid black;
-    width: 100%;
-    padding: 1rem;
-    border-radius: 9rem;
-    align-items: center;
-    justify-content: flex-end;
-    position: relative;
-    padding-right: 2rem;
+// La liste des pages
+.menu li {
+  padding-left: 30px;
 }
-.menu li {padding-left: 30px;}
+
 .menu li a {
   display: inline-block;
   text-decoration: none;
-  color: black;
-  text-align: center;
+  margin-bottom: -7px;
   transition: 0.15s ease-in-out;
   position: relative;
+
+  color: black;
   font-family: "garamond-premier-pro-subhead", serif;
   font-weight: 400;
   font-style: normal;
   font-size: clamp(1rem, 0.743rem + 0.632vw, 1.75rem);
-  margin-bottom: -7px;
-
 }
 
+// La ligne lorsque hover
 .menu li a::after {
   content: "";
   position: absolute;
@@ -69,8 +73,11 @@ font-size: clamp(1.563rem, 1.349rem + 0.526vw, 2.188rem);
   transition: 0.15s ease-in-out;
 }
 
-.menu li a:hover:after {width: 100%;}
+.menu li a:hover:after {
+  width: 100%;
+}
 
+// Les boutons X et du menu bg
 .ouvre-menu , .ferme-menu {
   position: absolute;
   color: black;
@@ -78,6 +85,7 @@ font-size: clamp(1.563rem, 1.349rem + 0.526vw, 2.188rem);
   font-size: 1.5rem;
   display: none;
 }
+
 .ouvre-menu {
   top: 50%;
   right: 20px;
@@ -88,11 +96,18 @@ font-size: clamp(1.563rem, 1.349rem + 0.526vw, 2.188rem);
   top: 20px;
   right: 20px;
 }
-#check {display: none;}
+
+#check {
+  display: none;
+}
+
+//////////////// VERSION MOBILE - MENU BURGER ////////////////////
 
 @media(max-width: 650px){
+
+  // La page menu     
   .menu {
-    gap: 1.2rem;
+      gap: 1.2rem;
       flex-direction: column;
       align-items: flex-start;
       justify-content: flex-start;
@@ -100,57 +115,43 @@ font-size: clamp(1.563rem, 1.349rem + 0.526vw, 2.188rem);
       height: 100vh;
       position: fixed;
       top: 0;
-      right: -100%;
       z-index: 100;
       background-color: white;
       transition: all 0.2s ease-in-out;
       border-radius: 0;
       border: 0px;
   }
-  .menu li {margin-top: 40px;
-  padding-left: 0;}
+  
+  // Le titre TIM
 
+  .logo-tim{
+    padding-left: .5rem;
+    position: static;
+  }
+
+  .logo-tim a{
+    font-size: clamp(3.438rem, 2.057rem + 8.242vw, 4.375rem);
+  }
+  
+  // La barre de pages
+  .menu li {
+    margin-top: 40px;
+    padding-left: 0;
+  }
 
   .menu li a {
     padding: 10px;
-  margin-left: 0;
-
-  font-size: clamp(2.5rem, 1.58rem + 5.495vw, 3.125rem);
+    margin-left: 0;
+    font-size: clamp(2.5rem, 1.58rem + 5.495vw, 3.125rem);
 }
 
+  // Les icone fermer et ouvir
+  .ouvre-menu , 
+  .ferme-menu {
+    display: block;
+  }
 
-.ouvre-menu , .ferme-menu {display: block;}
-#check:checked ~ .menu {right: 0;}
-
-.logo-tim a{
-  font-size: clamp(3.438rem, 2.057rem + 8.242vw, 4.375rem);
+  #check:checked ~ .menu {
+    right: 0;
+  }
 }
-
-.logo-tim{
-  padding-left: .5rem;
-  position: static;
-}
-
-
-
-}
-// }
-
-// .nav-droite {
-//   display: flex;
-//   justify-content: space-between;
-//   flex-grow: 1;
-//   max-width: 500px;
-//   margin-left: 30px;
-// }
-
-// .nav-droite a {
-//   flex-grow: 1;
-//   text-align: center;
-// }
-
-// @media screen and (min-width: 768px) {
-//   nav a {
-//     font-size: 1.2em;
-//   }
-// }

@@ -32,17 +32,6 @@
     </nav>
 </header>
 
-    <!-- <nav>
-        <a href="index.htm">Maisonneuve</a>
-        <div class="nav-droite">
-            <a href="stages.html">Stages</a>
-            <a href="cours.html">Cours</a>
-            <a href="enseignants.html">Professeurs</a>
-            <a href="projet.html">Projets</a>
-            <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
-        </div>
-    </nav> -->
-
     <main>
         <h1 class="h1-Contact">Nous rejoindre</h1>
 
@@ -196,10 +185,12 @@
           <img src="images/tim 2.png" alt="image">
         </footer>
 
+        <!-- le code js pour ne pas pouvoir scrool en menu bg -->
         <script>
           const checkbox = document.getElementById('check');
           const body = document.body;
         
+          // SI le bouton du menu est coché, on arrete le défilement, sinon on le reprend
           checkbox.addEventListener('change', () => {
             if (checkbox.checked) {
               body.classList.add('no-scroll');  // Disable scrolling
