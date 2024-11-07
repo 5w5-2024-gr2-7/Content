@@ -1135,6 +1135,31 @@ button:hover {
   font-family: "FontGreycliffBold";
   src: url("polices/Greycliff/Fontspring-DEMO-greycliffcf-bold.otf");
 }
+body {
+  background: linear-gradient(-45deg, #e73c7e, #3a66b8, #2383af, #ac5bcc);
+  background-size: 400% 400%;
+  animation: gradient 70s ease infinite; /* Increased duration from 15s to 30s */
+  height: 100%;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@media (max-width: 768px) {
+  body {
+    background: linear-gradient(-45deg, #e73c7e, #3a66b8, #7d57c4);
+    background-size: 150% 150%;
+    animation: gradient 40s ease infinite;
+  }
+}
 .separation-contact {
   display: flex;
   flex-direction: column;
