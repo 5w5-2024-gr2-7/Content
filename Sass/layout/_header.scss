@@ -117,7 +117,8 @@ body.no-scroll {
       right: -100%;
       top: 0;
       z-index: 100;
-      background-color: white;
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+      backdrop-filter: blur(15px);
       transition: all 0.2s ease-in-out;
       border-radius: 0;
       border: 0px;
