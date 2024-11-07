@@ -17,20 +17,20 @@
   <header>
     <nav>
         <ul class='nav-bar'>
-            <h2><a href="index.htm">TIM</a></h2>
-            <input type='checkbox' id='check' />
-            <span class="menu">
-                <li><a href="">Projets</a></li>
-                <li><a href="">Cours</a></li>
-                <li><a href="">Professeurs</a></li>
-                <li><a href="">Stages</a></li>
-                <li><a href="">Contact</a></li>
-                <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
-            </span>
-            <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+          <input type='checkbox' id='check' />
+          <span class="menu">
+              <h2 class="logo-tim"><a href="index.htm">TIM</a></h2>
+              <li><a href="">PROJETS</a></li>
+              <li><a href="">COURS</a></li>
+              <li><a href="">PROFESSEURS</a></li>
+              <li><a href="">STAGES</a></li>
+              <li><a href="">CONTACTS</a></li>
+              <label for="check" class="ferme-menu"><i class="fas fa-times"></i></label>
+          </span>
+          <label for="check" class="ouvre-menu"><i class="fas fa-bars"></i></label>
         </ul>
     </nav>
-    </header>
+</header>
 
     <!-- <nav>
         <a href="index.htm">Maisonneuve</a>
@@ -195,6 +195,19 @@
           </div>
           <img src="images/tim 2.png" alt="image">
         </footer>
+
+        <script>
+          const checkbox = document.getElementById('check');
+          const body = document.body;
+        
+          checkbox.addEventListener('change', () => {
+            if (checkbox.checked) {
+              body.classList.add('no-scroll');  // Disable scrolling
+            } else {
+              body.classList.remove('no-scroll');  // Re-enable scrolling
+            }
+          });
+        </script>
 
 </body>
 

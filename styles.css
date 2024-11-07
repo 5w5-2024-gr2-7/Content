@@ -1331,12 +1331,6 @@ button:hover {
 /* ///////////////////////////////////////////////////////////////// */
 /* Règles de layout                                                  */
 /* ///////////////////////////////////////////////////////////////// */
-body {
-  font-family: "Poppins", sans-serif;
-  --color1: #FFF ;
-  --color2: #181818 ;
-}
-
 .nav-bar {
   width: 100%;
   display: flex;
@@ -1344,16 +1338,42 @@ body {
   align-items: center;
   list-style: none;
   position: relative;
-  background-color: var(--color2);
   padding: 12px 20px;
+}
+
+body.no-scroll {
+  overflow: hidden; /* Disables scrolling when menu is open */
 }
 
 .logo img {
   width: 40px;
 }
 
+.logo-tim {
+  position: absolute;
+  left: 1rem;
+  margin-bottom: -7px;
+}
+
+.logo-tim a {
+  font-family: "termina", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  text-decoration: none;
+  color: black;
+  font-size: clamp(1.563rem, 1.349rem + 0.526vw, 2.188rem);
+}
+
 .menu {
   display: flex;
+  border: 1px solid black;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 9rem;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+  padding-right: 2rem;
 }
 
 .menu li {
@@ -1363,11 +1383,15 @@ body {
 .menu li a {
   display: inline-block;
   text-decoration: none;
-  color: var(--color1);
+  color: black;
   text-align: center;
   transition: 0.15s ease-in-out;
   position: relative;
-  text-transform: uppercase;
+  font-family: "garamond-premier-pro-subhead", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: clamp(1rem, 0.743rem + 0.632vw, 1.75rem);
+  margin-bottom: -7px;
 }
 
 .menu li a::after {
@@ -1377,7 +1401,7 @@ body {
   left: 0;
   width: 0;
   height: 1px;
-  background-color: var(--color1);
+  background-color: black;
   transition: 0.15s ease-in-out;
 }
 
@@ -1385,21 +1409,21 @@ body {
   width: 100%;
 }
 
-.open-menu, .close-menu {
+.ouvre-menu, .ferme-menu {
   position: absolute;
-  color: var(--color1);
+  color: black;
   cursor: pointer;
   font-size: 1.5rem;
   display: none;
 }
 
-.open-menu {
+.ouvre-menu {
   top: 50%;
   right: 20px;
   transform: translateY(-50%);
 }
 
-.close-menu {
+.ferme-menu {
   top: 20px;
   right: 20px;
 }
@@ -1408,31 +1432,44 @@ body {
   display: none;
 }
 
-@media (max-width: 610px) {
+@media (max-width: 650px) {
   .menu {
+    gap: 1.2rem;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 80%;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
     height: 100vh;
     position: fixed;
     top: 0;
     right: -100%;
     z-index: 100;
-    background-color: var(--color2);
+    background-color: white;
     transition: all 0.2s ease-in-out;
+    border-radius: 0;
+    border: 0px;
   }
   .menu li {
     margin-top: 40px;
+    padding-left: 0;
   }
   .menu li a {
     padding: 10px;
+    margin-left: 0;
+    font-size: clamp(2.5rem, 1.58rem + 5.495vw, 3.125rem);
   }
-  .open-menu, .close-menu {
+  .ouvre-menu, .ferme-menu {
     display: block;
   }
   #check:checked ~ .menu {
     right: 0;
+  }
+  .logo-tim a {
+    font-size: clamp(3.438rem, 2.057rem + 8.242vw, 4.375rem);
+  }
+  .logo-tim {
+    padding-left: 0.5rem;
+    position: static;
   }
 }
 /* Composition de base */
